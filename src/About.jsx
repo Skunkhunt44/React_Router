@@ -1,5 +1,5 @@
 import React from 'react'
-import image from './src/image.png'
+import image from './assets/image.png'
 import AboutCSS from './About.module.css'
 import { Link } from 'react-router-dom'
 
