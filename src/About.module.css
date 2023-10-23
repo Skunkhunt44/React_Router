@@ -1,0 +1,42 @@
+.container{
+    width: 548px;
+    height: 1035px;
+    margin: auto;
+    background-color: #FFF7ED;
+    position: relative;
+} 
+
+.header{
+    background-color:#FFF7ED ;
+    height: 111px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+ .header a{
+    text-decoration: none;
+    color: inherit;
+  }
+.header h1{
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 40px;
+  } 
+  .destination{
+    width: 494px;
+    height: 198px;
+    background-color:#FFCC8D  ;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    align-items: start;
+    gap: 5px;
+  }
+.btn{
+border-radius: 10px;
+background-color: #161616;
+color: white;
+width: 174px;
+padding: 10px;
+  }
