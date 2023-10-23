@@ -1,6 +1,7 @@
-import { useState } from 'react'
+
 import AppCss from './App.module.css'
 import { Link } from 'react-router-dom'
+import "./server"
 
 function App() {
   
@@ -17,7 +18,9 @@ function App() {
                   <li>
                     <Link to='/about'>About</Link>
                   </li>
-                  <li>Vans</li>
+                  <li>
+                    <Link to='/vans'>Vans</Link>
+                    </li>
                 </ul>
               </nav>
           </header>
