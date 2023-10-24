@@ -16,7 +16,9 @@ function About() {
                   <li>
                     <Link to='/about'>About</Link>
                   </li>
-                  <li>Vans</li>
+                  <li>
+                  <Link to='/vans'>Vans </Link> 
+                   </li>
                 </ul>
               </nav>
           </header>
