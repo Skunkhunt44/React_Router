@@ -1,27 +1,13 @@
 import React from 'react'
-import image from './assets/image.png'
+import image from '../assets/image.png'
 import AboutCSS from './About.module.css'
-import { Link } from 'react-router-dom'
+
 
 
 function About() {
   return (
     <div className={AboutCSS.container} >
-      <header className={AboutCSS.header}>
-              <h1>
-                <Link to='/'>#VANLIFE </Link>
-              </h1>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to='/about'>About</Link>
-                  </li>
-                  <li>
-                  <Link to='/vans'>Vans </Link> 
-                   </li>
-                </ul>
-              </nav>
-          </header>
+     
           <main >
                <img src={image} alt="" style={{backGroundSize:'cover',width:'100%',height:'233px'}}/>
 
@@ -38,9 +24,7 @@ function About() {
                 </div> 
 
           </main>
-         <footer className='absolute bottom-0 w-full'>
-         Ⓒ 2022 #VANLIFE
-         </footer>
+       
     </div>
   )
 }

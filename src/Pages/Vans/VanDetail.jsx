@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowLeftLong} from '@fortawesome/free-solid-svg-icons'
-import "./server"
+import "../../server"
 
 
 function VanDetail() {
@@ -42,22 +42,8 @@ const Detail=({imageUrl,description,type,name,price})=>{
 
 
   return (
-    <div className='h-[1259px] w-[548px] m-auto bg-[#FFF7ED] relative'>
-        <header >
-              <h1>
-                <Link to='/'>#VANLIFE </Link>
-              </h1>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to='/about'>About</Link>
-                  </li>
-                  <li>
-                    <Link to='/vans'>Vans</Link>
-                    </li>
-                </ul>
-              </nav>
-        </header>
+    <div className='h-[1074px] w-[548px] m-auto bg-[#FFF7ED] relative'>
+        
         <main className='p-5 '>
             <p><FontAwesomeIcon icon={faArrowLeftLong} /> Back to all vans</p>
             <div className='mt-6'>
@@ -75,9 +61,7 @@ const Detail=({imageUrl,description,type,name,price})=>{
 
 
         </main>
-        <footer className='absolute bottom-0 w-full h-[70] ' >
-        Ⓒ 2022 #VANLIFE
-        </footer>
+     
         
 
     </div>

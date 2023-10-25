@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from 'react-router-dom'
 import Card from './Card'
-import "./server"
+import "../../server"
 
 
 
@@ -43,22 +42,8 @@ function Vans() {
 
 
   return (
-    <div className='h-[1451px] w-[548px] m-auto bg-[#FFF7ED] relative'>
-        <header >
-              <h1>
-                <Link to='/'>#VANLIFE </Link>
-              </h1>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to='/about'>About</Link>
-                  </li>
-                  <li>
-                    <Link to='/vans'>Vans</Link>
-                    </li>
-                </ul>
-              </nav>
-        </header>
+    <div className='h-[1270px] w-[548px] m-auto bg-[#FFF7ED] relative'>
+   
         <main className='p-[15px]'>
             <h1 className='font-[700] text-[32px] mb-2'>Explore our van options</h1>
             <div className='flex justify-between items-center'>
@@ -79,9 +64,7 @@ function Vans() {
 
 
         </main>
-        <footer className='absolute bottom-0 w-full h-[70] ' >
-        Ⓒ 2022 #VANLIFE
-        </footer>
+      
         
     </div>
   )

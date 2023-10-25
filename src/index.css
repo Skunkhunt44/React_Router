@@ -20,3 +20,35 @@ color: white;
 background-color: #161616;
 color:white;
 }
+header{
+  width: 548px;
+  background-color:#FFF7ED ;
+  height: 111px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0 auto;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header h1{
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 40px;
+}
+footer{
+  width: 548px;
+  margin: auto;
+  height: 74px;
+  background-color: #252525;
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
