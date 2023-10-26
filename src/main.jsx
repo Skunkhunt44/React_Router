@@ -10,6 +10,9 @@ import Layout from './components/Layout.jsx'
 import Income from './Pages/Host/Income.jsx'
 import Dashboard from './Pages/Host/Dashboard.jsx'
 import Reviews from './Pages/Host/Reviews.jsx'
+import HostLayout from './components/HostLayout.jsx'
+import VansHost from './Pages/Host/VansHost.jsx'
+import HostVanDetail from './Pages/Host/HostVanDetail.jsx'
 
 
 
@@ -18,14 +21,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout/>}>
-          <Route path='/' element={<App/>} />   
-          <Route path='/about' element={<About/>} />                  
-          <Route path='/vans' element={<Vans/>} />                  
-          <Route path='/vans/:id' element={<VanDetail/>} />
-          <Route path='/host' element={<Dashboard/>}>
-              <Route path='/host/income' element={<Income/>} />                  
-              <Route path='/host/Reviews' element={<Reviews/>} />     
+        <Route path='/' element={<Layout/>}>
+          <Route  index element={<App/>} />   
+          <Route path='about' element={<About/>} />                  
+          <Route path='vans' element={<Vans/>} />                  
+          <Route path='vans/:id' element={<VanDetail/>} />
+          <Route path='/host' element={<HostLayout/>}>            
+              <Route index element={<Dashboard/>} />                  
+              <Route path='income' element={<Income/>} />                  
+              <Route path='Reviews' element={<Reviews/>} />     
+              <Route path='vans' element={<VansHost/>} />                  
+              <Route path='vans/:id' element={<HostVanDetail/>} />                  
           </Route>                  
         </Route>
       </Routes>

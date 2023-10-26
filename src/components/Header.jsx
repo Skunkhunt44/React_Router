@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink,Link} from 'react-router-dom'
 
 
 function Header() {
@@ -7,18 +7,18 @@ function Header() {
     <div>
         <header>
               <h1>
-                <Link to='/'>#VANLIFE </Link>
+                <Link  to='/'>#VANLIFE </Link>
               </h1>
               <nav>
                 <ul>
                   <li>
-                  <Link to='/host'>Host</Link>
+                  <NavLink   className={({isActive})=> isActive ? 'active-link': null} to='/host'>Host</NavLink>
                   </li>
                   <li>
-                    <Link to='/about'>About</Link>
+                    <NavLink className={({isActive})=> isActive?'active-link':null} to='/about'>About</NavLink>
                   </li>
                   <li>
-                    <Link to='/vans'>Vans</Link>
+                    <NavLink className={({isActive})=> isActive?'active-link':null} to='/vans'>Vans</NavLink>
                     </li>
                 </ul>
               </nav>
