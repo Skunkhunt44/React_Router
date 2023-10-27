@@ -45,7 +45,9 @@ const Detail=({imageUrl,description,type,name,price})=>{
     <div className='h-[1074px] w-[548px] m-auto bg-[#FFF7ED] relative'>
         
         <main className='p-5 '>
-            <p><FontAwesomeIcon icon={faArrowLeftLong} /> Back to all vans</p>
+            <p>
+              <Link to='..' relative='path'>  <FontAwesomeIcon icon={faArrowLeftLong} /> Back to all vans</Link>
+            </p>
             <div className='mt-6'>
             {van ? (
                 <div>

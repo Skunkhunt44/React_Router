@@ -16,16 +16,16 @@ const activeStyle={
         <nav>
             <ul className='font-[500] text-[18px] text-[#4D4D4D]'>
                 <li>
-                  <NavLink end style={({isActive})=> isActive ? activeStyle : null}  to='/host'>Dashboard</NavLink >
+                  <NavLink end style={({isActive})=> isActive ? activeStyle : null}  to='.'>Dashboard</NavLink >
                 </li>               
                 <li>
-                  <NavLink end style={({isActive})=> isActive ? activeStyle : null}  to='/host/vans'>Vans</NavLink >
+                  <NavLink end style={({isActive})=> isActive ? activeStyle : null}  to='vans'>Vans</NavLink >
                   </li>
                 <li>
-                  <NavLink style={({isActive})=> isActive ? activeStyle   : null}  to='/host/income'>Income</NavLink >
+                  <NavLink style={({isActive})=> isActive ? activeStyle   : null}  to='income'>Income</NavLink >
                 </li>
                 <li>
-                  <NavLink style={({isActive})=> isActive ? activeStyle : null}  to='/host/reviews'>Reviews</NavLink >
+                  <NavLink style={({isActive})=> isActive ? activeStyle : null}  to='reviews'>Reviews</NavLink >
                 </li>
             </ul>
 

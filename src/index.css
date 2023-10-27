@@ -11,14 +11,20 @@
 .vansimple{
 background-color: #E17654;
 color: white;
+padding: 5px;
+border-radius: 5px;
 }
 .vanrugged{
 background-color:#115E59;
 color: white;
+padding: 5px;
+border-radius: 5px;
 }
 .vanluxury{
 background-color: #161616;
 color:white;
+padding: 5px;
+border-radius: 5px;
 }
 header{
   width: 548px;
